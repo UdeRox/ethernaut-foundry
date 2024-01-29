@@ -64,3 +64,8 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+Problem while solving Fallout challenge, install two version of openzeppelin libs 
+use below command to install openzeppelin-contract-06 and use remappings.txt to map the dependencies 
+forge install openzeppelin-contracts-06=OpenZeppelin/openzeppelin-contracts@v3.4.0
+
