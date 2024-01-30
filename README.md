@@ -1,71 +1,33 @@
-## Foundry
+# Ethernaut Challenge with Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Welcome to my Ethernaut challenge solutions repository! In this repository, I have documented my solutions to the challenges from the Ethernaut platform, which you can find at [https://ethernaut.openzeppelin.com/](https://ethernaut.openzeppelin.com/).
 
-Foundry consists of:
+## Getting Started
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+### Prerequisites
 
-## Documentation
+Before you can start working on the challenges locally, make sure you have the following installed:
 
-https://book.getfoundry.sh/
+- [Foundry](https://book.getfoundry.sh/) - Foundry is a development environment for Ethereum smart contracts.
 
-## Usage
+### Installation
 
-### Build
+1. Clone this repository to your local machine:
 
-```shell
-$ forge build
-```
+   ```bash
+   git clone https://github.com/UdeRox/ethernaut-foundry.git
+   cd ethernaut-foundry
+   forge install
+   forge build
 
-### Test
+## Ethernaut Challenges
+ https://ethernaut.openzeppelin.com/
 
-```shell
-$ forge test
-```
+ The Ethernaut is a Web3/Solidity based wargame inspired by overthewire.org, played in the Ethereum Virtual Machine. Each level is a smart contract that needs to be 'hacked'. The game is 100% open source and all levels are contributions made by other players
 
-### Format
+# Issue in Resolving Fallout Challenge
 
-```shell
-$ forge fmt
-```
+Encountered a challenge while working on the Fallout challenge, where it was necessary to install two different versions of the OpenZeppelin libraries. To address this, utilize the following command to install the openzeppelin-contracts-06 library and employ the remappings.txt file for dependency mapping:
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
-
-Problem while solving Fallout challenge, install two version of openzeppelin libs 
-use below command to install openzeppelin-contract-06 and use remappings.txt to map the dependencies 
+```bash
 forge install openzeppelin-contracts-06=OpenZeppelin/openzeppelin-contracts@v3.4.0
-
